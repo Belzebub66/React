@@ -1,0 +1,29 @@
+*{
+    background-color: black;
+    color: greenyellow;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.planeta {
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+}
+.planeta:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.panel{
+    position: absolute;
+    justify-content: right;
+    top: 10px;
+    right: 10px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+}
