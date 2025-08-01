@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import AppRoutes from './routes/AppRoutes'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import Navbar from './components/NavBar'
 
 const App = () => {
@@ -25,9 +25,10 @@ const App = () => {
   }
 
   return (
-    <div className='container'>
+    <div>
       <BrowserRouter>
-        <Navbar onLogin={login} onLogout={logout} />
+        <Navbar />
+        <AppRoutes user={user} login={login} logout={logout} />
       </BrowserRouter>
     </div>
   )
