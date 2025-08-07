@@ -1,6 +1,6 @@
 const Home = ({ user, logout }) => {
   return (
-    <div>
+    <>
       <h1>Bienvenido a Twitter</h1>
       {user && (
         <div>
@@ -8,8 +8,12 @@ const Home = ({ user, logout }) => {
           <button onClick={logout}>Cerrar sesión</button>
         </div>
       )}
-      {/* ... contenido de la página ... */}
-    </div>
+      {!user && (
+        <div>
+          <p>Por favor, inicia sesión para continuar.</p>
+        </div>
+      )}
+    </>
   )
 }
 
